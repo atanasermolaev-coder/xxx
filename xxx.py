@@ -20,7 +20,7 @@ def main():
     amount = float(input("Сумма кредита: "))
     rate = float(input("Ставка, % годовых: "))
     years = int(input("Срок, лет: "))
-    print(f"Платёж в месяц: {monthly_payment(amount, rate, years):.2f}")
+    print(f"Ежемесячный платеж: {monthly_payment(amount, rate, years):.2f}")
     print(f"Переплата: {overpayment(amount, rate, years):.2f}")
 
 
