@@ -3,8 +3,8 @@ from xxx import monthly_payment, overpayment
 
 
 def test_payment_with_rate():
-    assert monthly_payment(1_000_000, 12, 1) == pytest.approx(88848.79, abs=0.01)
-
+    result = monthly_payment(1_000_000, 12, 1)
+    assert result == pytest.approx(88848.79, abs=0.01)
 
 def test_payment_zero_rate():
     assert monthly_payment(1_200_000, 0, 1) == 100_000
