@@ -26,7 +26,7 @@ def test_overpayment_zero_rate():
     assert result == pytest.approx(0, abs=0.01)
 
 
-def test_overpayment_matches_payment():
+def test_overpayme nt_matches_payment():
     # переплата = все платежи минус сумма кредита
     amount, rate, years = 3_000_000, 9, 10
     total = monthly_payment(amount, rate, years) * years * 12
