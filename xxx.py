@@ -17,7 +17,7 @@ def overpayment(amount, annual_rate, years):
 
 
 def main():
-    amount = float(input("Сумма кредита: "))
+    amount = float(input("Сумма ипотеки: "))
     rate = float(input("Ставка, % годовых: "))
     years = int(input("Срок, лет: "))
     print(f"Ежемесячный платеж: {monthly_payment(amount, rate, years):.2f}")
